@@ -17,11 +17,8 @@
 }
 
 
-
-
-
 .navbar-inverse {
-    background-color: #0055fd;
+    background-color: #0400ff;
     border-color: #080808;
 }
 
@@ -48,3 +45,27 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+
+
+.course {
+    list-style: none;
+}
+
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li .date {
+            text-align: center;
+            background-color: #0400ff;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
