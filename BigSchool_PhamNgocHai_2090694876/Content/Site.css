@@ -33,6 +33,11 @@
     left: 0;
     z-index: 1030;
 }
+
+.navbar-brand {
+    color: #211f1f;
+    background-color: black;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,

@@ -1,10 +1,12 @@
 ﻿using BigSchool_PhamNgocHai_2090694876.Models;
+using BigSchool_PhamNgocHai_2090694876.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace BigSchool_PhamNgocHai_2090694876.Controllers
 {
@@ -24,7 +26,13 @@ namespace BigSchool_PhamNgocHai_2090694876.Controllers
                  .Include(c => c.Lecturer)
                  .Include(c => c.Category)
                  .Where(c => c.DateTime > DateTime.Now);
-            return View(upcomingCourses);
+
+            var viewModel = new CoursesViewModel
+            {
+                UpcommingCourses = upcomingCourses,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+            return View(viewModel);
         }
 
         public ActionResult About()

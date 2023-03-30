@@ -13,7 +13,7 @@ namespace BigSchool_PhamNgocHai_2090694876.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202303230248125_AddAttendance"; }
+            get { return "202303291649270_AddAttendance"; }
         }
         
         string IMigrationMetadata.Source

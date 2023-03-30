@@ -21,7 +21,7 @@
                 .Index(t => t.AttendeeId);
 
         }
-
+        
         public override void Down()
         {
             DropForeignKey("dbo.Attendances", "CourseId", "dbo.Courses");

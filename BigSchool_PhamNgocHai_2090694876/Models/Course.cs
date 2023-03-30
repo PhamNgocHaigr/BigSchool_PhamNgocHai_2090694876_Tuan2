@@ -21,5 +21,5 @@ namespace BigSchool_PhamNgocHai_2090694876.Models
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
-    }
+    }   
 }
